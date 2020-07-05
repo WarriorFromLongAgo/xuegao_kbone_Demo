@@ -24,6 +24,9 @@ module.exports = {
     }
   },
   rules: {
+    "global-require": 0,
+    "no-tabs":"off",
+    "indent": ["off", 2],
     // disallow reassignment of function parameters
     // disallow parameter object manipulation except for specific exclusions
     'no-param-reassign': ['error', {

@@ -9,11 +9,12 @@ module.exports = {
         home: [
             '/(home|index)?',
             '/index.html',
-            '/test/(home|index)',
+            '/test/(home|index)'
         ],
         other: [
             '/test/list/:id',
             '/test/detail/:id',
+            '/test/AAA'
         ],
     },
     redirect: {
@@ -26,11 +27,11 @@ module.exports = {
     app: {
         backgroundTextStyle: 'dark',
         navigationBarTextStyle: 'white',
-        navigationBarTitleText: 'kbone',
+        navigationBarTitleText: 'kbone-xuegao',
     },
-	appExtraConfig: {
+    appExtraConfig: {
         sitemapLocation: 'sitemap.json',
-	},
+    },
     global: {
         share: true,
         windowScroll: false,
@@ -38,18 +39,18 @@ module.exports = {
     },
     pages: {},
     optimization: {
-		domSubTreeLevel: 10,
+        domSubTreeLevel: 10,
 
-		elementMultiplexing: true,
-		textMultiplexing: true,
-		commentMultiplexing: true,
-		domExtendMultiplexing: true,
+        elementMultiplexing: true,
+        textMultiplexing: true,
+        commentMultiplexing: true,
+        domExtendMultiplexing: true,
 
-		styleValueReduce: 5000,
-		attrValueReduce: 5000,
-	},
+        styleValueReduce: 5000,
+        attrValueReduce: 5000,
+    },
     projectConfig: {
-        projectname: 'kbone-template-vue',
+        projectname: 'kbone-xuegao-vue',
         appid: '',
     },
 }

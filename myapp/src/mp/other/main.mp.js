@@ -5,6 +5,7 @@ import App from '../../App.vue'
 import store from '../../store'
 import List from '../../list/Index.vue'
 import Detail from '../../detail/Index.vue'
+import AAA from '../../detail/AAA.vue'
 
 Vue.use(Router)
 
@@ -18,6 +19,10 @@ const router = new Router({
     path: '/test/detail/:id',
     name: 'Detail',
     component: Detail,
+  }, {
+    path: '/test/AAA',
+    name: 'AAA',
+    component: AAA,
   }],
 })
 

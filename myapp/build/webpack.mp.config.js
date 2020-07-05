@@ -2,7 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 const eslintFriendlyFormatter = require('eslint-friendly-formatter')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const {VueLoaderPlugin} = require('vue-loader')
+const { VueLoaderPlugin } = require('vue-loader')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
 const MpPlugin = require('mp-webpack-plugin') // 用于构建小程序代码的 webpack 插件
@@ -98,12 +98,10 @@ module.exports = {
             loader: 'postcss-loader',
             options: {
               ident: 'postcss',
-              plugins: () => {
-                return [
+              plugins: () => [
                   autoprefixer,
                   stylehacks(), // 剔除 ie hack 代码
                 ]
-              }
             }
           },
           {
@@ -189,7 +187,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.vue', '.json'],
     alias: {
-      'vue$': 'vue/dist/vue.esm.js',
+      vue$: 'vue/dist/vue.esm.js',
       '@': path.resolve(__dirname, '../src'),
     },
   },

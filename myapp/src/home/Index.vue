@@ -6,6 +6,7 @@
       <a href="/test/detail/123" target="_blank">新开页面跳转</a>
       <button @click="onClickJump">当前页跳转</button>
       <button @click="onClickOpen">新开页面跳转</button>
+      <button @click="onAAA"> onAAA - 新开页面跳转</button>
     </div>
 
     <h2>输入一段文字</h2>
@@ -63,6 +64,9 @@ export default Vue.extend({
 
     onClickOpen() {
       window.open('/test/detail/123')
+    },
+    onAAA() {
+      window.open('/test/AAA')
     },
   },
 })
